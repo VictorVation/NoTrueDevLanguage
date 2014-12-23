@@ -1,6 +1,6 @@
 {
   "name": "No True Dev Language",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "manifest_version": 2,
   "description": "Remove any Facebook comment that suggests there is a 'only real dev language'.",
   "homepage_url": "http://victorszeto.com",

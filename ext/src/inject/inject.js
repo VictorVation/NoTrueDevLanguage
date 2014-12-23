@@ -7,17 +7,19 @@ chrome.extension.sendMessage({}, function(response) {
     var killNode = function() {
       j('.UFIImageBlockContent').each(function() {
         if (badWords.test(this.textContent) == true) {
-          j(this).parents('.UFIComment').css('backgroundColor', '#EF5350').slideUp(800);
+          j(this).parents('.UFIComment').css('backgroundColor', '#EF5350').slideUp(500);
         }
       });
     };
     j('span:contains("more comments")').each(function() {
-      j(this).on('click', function(){
+
+      j(this).on('click', function() {
         setTimeout(function() {
           killNode();
-        }, 1000);
-      })
-    })
+          console.log('clicked');
+        }, 2000);
+      });
+    });
     killNode();
 	}
 	}, 10);
