@@ -1,6 +1,6 @@
 {
   "name": "No True Dev Language",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "manifest_version": 2,
   "description": "Remove any Facebook comment that suggests there is a 'only real dev language'.",
   "homepage_url": "http://victorszeto.com",
@@ -13,15 +13,15 @@
   "permissions": [
     "https://www.facebook.com/*"
   ],
-  "options_page": "src/options/index.html",
+  "options_page": "src/options.html",
   "content_scripts": [
     {
       "matches": [
         "https://www.facebook.com/*"
       ],
       "js": [
-        "src/inject/jquery.min.js",
-        "src/inject/inject.js"
+        "src/jquery.min.js",
+        "src/killNode.js"
       ]
     }
   ]
